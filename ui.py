@@ -30,9 +30,9 @@ def streamer_data_callbacks(data):
     screen encoded data right here
     """
     wx.CallAfter(Publisher.sendMessage,'app.update', rawdata=data)
-    with open(r'static_images_ex/'+str(streamer_data_callbacks.idx)+'.jpg', 'ab') as f:
-        f.write(data)
-    streamer_data_callbacks.idx += 1
+    # with open(r'static_images_ex/'+str(streamer_data_callbacks.idx)+'.jpg', 'ab') as f:
+    #     f.write(data)
+    # streamer_data_callbacks.idx += 1
 
 
 class CastPanel(wx.Panel):
