@@ -1,0 +1,6 @@
+*.ipynb
+f
+__pycache__
+.vscode
+static_images_ex
+*.log
